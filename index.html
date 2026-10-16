@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneo Universitario Left 4 Dead 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/img/icon/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+
+                <div class="navbar-brand d-flex align-items-center" id="navbar_left">
+                    <!-- Aquí va el logo del torneo -->
+                    <img class="m-1" id="logo" src="/img/grandes/logo.webp" alt="Logo del torneo">
+                    <a class="nav-link m-1" onclick="cargarPagina('paginas/default/index_D.html')" href="#">Torneo L4D2</a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_menu" aria-controls="navbar_menu" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar_menu">
+                    <div class="navbar-nav ms-auto align-items-lg-center" id="navbar_right">
+                        <a class="nav-link m-1" onclick="cargarPagina('paginas/default/index_D.html')" href="#">Home</a>
+                        <a class="nav-link m-1" onclick="cargarPagina('paginas/formato/index_F.html')" href="#">Formato</a>
+                        <a class="nav-link m-1" onclick="cargarPagina('paginas/reglas/index_R.html')" href="#">Reglas</a>
+                        <a class="nav-link m-1" onclick="cargarPagina('paginas/conducta/index_C.html')" href="#">Conducta</a>
+                        <a class="nav-link m-1" onclick="cargarPagina('paginas/requisitos/index_Q.html')" href="#">Requisitos</a>
+                        <!--<a class="nav-link m-1" onclick="cargarPagina('paginas/premios/index_P.html')" href="#">Inscripción y Premios</a>-->
+                        <!-- Inscribirte ya: solo es un link externo. Pon tu URL en el href -->
+                        <a class="btn m-1" id="inscribirse" href="" target="_blank" rel="noopener">Inscribirte ya</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <main id="contenido_main">
+
+    </main>
+
+
+    <footer id="footer">
+        <p class="m-0">Torneo Universitario Left 4 Dead 2 — Reglamento oficial - Recursos de Lef 4 Dead 2 por: Valve</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

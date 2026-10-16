@@ -1,0 +1,104 @@
+:root{
+    --color-color1: #171a18;   /* asfalto: fondo */
+    --color-color2: #232824;   /* concreto mojado: tarjetas */
+    --color-color3: #e9e5d6;   /* hueso: texto */
+    --color-color4: #e3b830;   /* amarillo de advertencia: acento */
+    --color-color5: #b3261e;   /* sangre: sanciones / peligro */
+    --color-color6: #9aa39c;   /* gris verdoso: texto secundario */
+    --bs-body-bg: var(--color-color1);
+    --bs-body-color: var(--color-color3);
+    --bs-body-font-family: 'Barlow', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --fuente-titulo: 'Saira Stencil One', Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+body{
+    background: var(--color-color1);
+    color: var(--color-color3);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{ flex: 1; }
+
+h1, h2, h3, h4, h5{
+    font-family: var(--fuente-titulo);
+    font-weight: 400;
+    letter-spacing: .02em;
+}
+
+a{ color: var(--color-color4); }
+a:hover{ color: var(--color-color3); }
+
+/* ---------- navbar ---------- */
+#navbar{
+    background: var(--color-color2);
+    border-bottom: 3px solid var(--color-color4);
+}
+
+#navbar_left{
+    margin-left: 1rem !important;
+    font-family: var(--fuente-titulo);
+    color: var(--color-color3);
+}
+
+#logo{ height: 2.5rem; }
+
+#navbar_right{
+    margin-right: 1rem;
+}
+
+#navbar_right .nav-link{
+    color: var(--color-color3);
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+}
+
+#navbar_right .nav-link:hover,
+#navbar_right .nav-link.active{
+    color: var(--color-color4);
+    border-bottom-color: var(--color-color4);
+}
+
+#inscribirse{
+    background: var(--color-color4);
+    color: var(--color-color1);
+    font-weight: 600;
+    border-radius: 0;
+}
+
+#inscribirse:hover{
+    background: var(--color-color3);
+    color: var(--color-color1);
+}
+
+:focus-visible{
+    outline: 3px solid var(--color-color4);
+    outline-offset: 2px;
+}
+
+/* ---------- tarjetas (compartido por todas las páginas) ---------- */
+.mi-tarjeta{
+    background: var(--color-color2);
+    border: 1px solid #343b36;
+    border-left: 5px solid var(--color-color4);
+    border-radius: 0;
+    --bs-card-color: var(--color-color3);
+}
+
+.mi-tarjeta.peligro{ border-left-color: var(--color-color5); }
+
+.mi-tarjeta .card-title{ color: var(--color-color4); }
+.mi-tarjeta.peligro .card-title{ color: #e0554c; }
+
+.texto-suave{ color: var(--color-color6); }
+
+/* ---------- footer ---------- */
+#footer{
+    background: var(--color-color2);
+    color: var(--color-color6);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 4rem;
+    font-size: .9rem;
+}

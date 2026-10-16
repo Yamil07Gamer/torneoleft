@@ -1,0 +1,19 @@
+                        <estructura carpetas>
+
+Este proyecto sigue una estructura 100% modular
+
+|-- proyectofinal
+|     |--index.html
+|     |--style.css
+|     |--script.js
+|     |--img
+|     |    |--grandes
+|     |    |--icon
+|     |-- paginas
+|     |    |--default    (index_D.html, script_D.js, style_D.css)
+|     |    |--formato    (index_F.html, script_F.js, style_F.css)
+|     |    |--reglas     (index_R.html, script_R.js, style_R.css)
+|     |    |--conducta   (index_C.html, script_C.js, style_C.css)
+|     |    |--requisitos (index_Q.html, script_Q.js, style_Q.css)
+
+"Inscribirte ya" no es una pagina: es un link externo en el navbar (#inscribirse).
