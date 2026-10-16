@@ -1,0 +1,262 @@
+        <div class="container mt-5" id="formato">
+            <h2 class="mb-3">Formato del torneo</h2>
+            <p class="lead">El torneo se juega en modalidad Versus (4 vs 4) con 12 equipos, a eliminación directa a través de 5 fases. En cada enfrentamiento se rotan los lados bandos para que ambos equipos jueguen como Supervivientes e Infectados.</p>
+        </div>
+
+        <!-- SECTION 1: extensión del navbar (fases) -->
+        <section class="container mt-4" id="section1">
+            <ul class="nav nav-pills flex-column flex-sm-row" id="fases_tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="tab_fase1" data-bs-toggle="pill" data-bs-target="#fase1" type="button" role="tab" aria-controls="fase1" aria-selected="true">Fase 1</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tab_fase2" data-bs-toggle="pill" data-bs-target="#fase2" type="button" role="tab" aria-controls="fase2" aria-selected="false">Fase 2</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tab_fase3" data-bs-toggle="pill" data-bs-target="#fase3" type="button" role="tab" aria-controls="fase3" aria-selected="false">Fase 3</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tab_fase4" data-bs-toggle="pill" data-bs-target="#fase4" type="button" role="tab" aria-controls="fase4" aria-selected="false">Fase 4</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tab_final" data-bs-toggle="pill" data-bs-target="#gran_final" type="button" role="tab" aria-controls="gran_final" aria-selected="false">Gran final</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tab_buff_nerfs" data-bs-toggle="pill" data-bs-target="#modificaciones" type="button" role="tab" aria-controls="modificaciones" aria-selected="false">Balanceos</button>
+                </li>
+                
+            </ul>
+        </section>
+
+        <!-- SECTION 2: contenido de cada fase -->
+        <section class="container mt-4" id="section2">
+            <div class="tab-content" id="fases_contenido">
+
+                <!-- Fase 1 -->
+                <div class="tab-pane fade show active" id="fase1" role="tabpanel" aria-labelledby="tab_fase1" tabindex="0">
+                    <div class="row g-4">
+                        <div class="col-12 col-lg-5">
+                            <!-- Imagen del mapa: The Parish -->
+                            <img src="/img/grandes/theparish.webp" class="img-fluid w-100" alt="The Parish">
+                        </div>
+                        <div class="col-12 col-lg-7">
+                            <div class="card mi-tarjeta">
+                                <div class="card-body">
+                                    <h3 class="card-title">Fase 1: Primera ronda</h3>
+                                    <p class="texto-suave">XX equipos · 6 enfrentamientos</p>
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-2"><strong>Mapa:</strong> The Parish, capítulo 1.</li>
+                                        <li class="mb-2"><strong>Desempate:</strong> si hay empate exacto en puntos, se juega el capítulo 2.</li>
+                                        <li><strong>Clasificación:</strong> avanzan los 6 equipos ganadores.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fase 2 -->
+                <div class="tab-pane fade" id="fase2" role="tabpanel" aria-labelledby="tab_fase2" tabindex="0">
+                    <div class="row g-4">
+                        <div class="col-12 col-lg-5">
+                            <!-- Imagen del mapa: Swamp Fever -->
+                            <img src="/img/grandes/TheNewSwampFever.JPG.webp" class="img-fluid w-100" alt="Swamp Fever">
+                        </div>
+                        <div class="col-12 col-lg-7">
+                            <div class="card mi-tarjeta">
+                                <div class="card-body">
+                                    <h3 class="card-title">Fase 2: Cuartos de final</h3>
+                                    <p class="texto-suave">6 equipos · 3 enfrentamientos</p>
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-2"><strong>Mapa:</strong> Swamp Fever, capítulos 1.</li>
+                                        <li class="mb-2"><strong>Desempate:</strong> si hay empate en la suma global, se juega el capítulo 2.</li>
+                                        <li><strong>Clasificación:</strong> avanzan los 3 ganadores directos y el "Mejor perdedor", el equipo eliminado con el mayor puntaje de esta fase.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fase 3 -->
+                <div class="tab-pane fade" id="fase3" role="tabpanel" aria-labelledby="tab_fase3" tabindex="0">
+                    <div class="row g-4">
+                        <div class="col-12 col-lg-5">
+                            <!-- Imagen del mapa: Dead Center -->
+                            <img src="/img/grandes/DeadCenter.webp" class="img-fluid w-100" alt="Dead Center">
+                        </div>
+                        <div class="col-12 col-lg-7">
+                            <div class="card mi-tarjeta">
+                                <div class="card-body">
+                                    <h3 class="card-title">Fase 3: Semifinales</h3>
+                                    <p class="texto-suave">4 equipos · 2 enfrentamientos</p>
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-2"><strong>Mapa:</strong> Dead Center, capítulos 1.</li>
+                                        <li class="mb-2"><strong>Desempate:</strong> si hay empate en la suma global, se juega el capítulo 2.</li>
+                                        <li><strong>Clasificación:</strong> avanzan 2 equipos a la Gran final; los 2 perdedores van al partido por el 3.er y 4.º lugar.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fase 4 -->
+                <div class="tab-pane fade" id="fase4" role="tabpanel" aria-labelledby="tab_fase4" tabindex="0">
+                    <div class="row g-4">
+                        <div class="col-12 col-lg-5">
+                            <!-- Imagen del mapa: Hard Rain -->
+                            <img src="/img/grandes/HardRain.webp" class="img-fluid w-100" alt="Hard Rain">
+                        </div>
+                        <div class="col-12 col-lg-7">
+                            <div class="card mi-tarjeta">
+                                <div class="card-body">
+                                    <h3 class="card-title">Fase 4: Tercer y cuarto lugar</h3>
+                                    <p class="texto-suave">2 equipos · 1 enfrentamiento</p>
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-2"><strong>Mapa:</strong> Hard Rain, capítulos 1 y 2.</li>
+                                        <li><strong>Desempate:</strong> si hay empate en la suma global, se juega el capítulo 3.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gran final -->
+                <div class="tab-pane fade" id="gran_final" role="tabpanel" aria-labelledby="tab_final" tabindex="0">
+                    <div class="row g-4">
+                        <div class="col-12 col-lg-5">
+                            <!-- Imagen del mapa: Dark Carnival -->
+                            <img src="/img/grandes/Dark_Carnival02.webp" class="img-fluid w-100" alt="Dark Carnival">
+                        </div>
+                        <div class="col-12 col-lg-7">
+                            <div class="card mi-tarjeta">
+                                <div class="card-body">
+                                    <h3 class="card-title">Fase 5: Gran final</h3>
+                                    <p class="texto-suave">2 equipos · 1 enfrentamiento</p>
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-2"><strong>Mapa:</strong> Dark Carnival, campaña completa (capítulos 1 al 5).</li>
+                                        <li><strong>Ganador:</strong> el equipo con mayor puntaje global acumulado tras el concierto del capitulo final.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Buff y nerfs-->
+
+                <div class="tab-pane fade" id="modificaciones" role="tabpanel" aria-labelledby="tab_mods" tabindex="0">
+                    <div class="row g-4">
+                        <div class="col-12 col-lg-5">
+                            <!-- Imagen ilustrativa de las modificaciones -->
+                            <img src="/img/grandes/botiquin.webp" class="img-fluid w-90" alt="Modificaciones de juego">
+                            <img src="/img/grandes/tier1.webp" class="img-fluid w-100" alt="Modificaciones de juego">
+                        </div>
+
+                        <div class="col-12 col-lg-7">
+                            <div class="card mi-tarjeta">
+                                <div class="card-body">
+                                    <h3 class="card-title">Modificaciones de juego</h3>
+                                    <p class="texto-suave">Buffs y nerfs aplicados objetos del juego</p>
+                                    <div class="table-responsive">
+                                        <table class="table align-middle mb-0" id="tabla_modificaciones">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Objeto</th>
+                                                    <th scope="col">Cambio</th>
+                                                    <th scope="col">Original</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Desfibrilador</th>
+                                                    <td><code>Al revivir, el jugador queda solo con 20 de vida.</code></td>
+                                                    <td>50 HP</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Desfibrilador</th>
+                                                    <td><code>Se usa en 7 segundos.</code></td>
+                                                    <td>Se usa en 3 segundos.</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Botiquín</th>
+                                                    <td><code>Se usa en 7 segundos.</code></td>
+                                                    <td>Se usa en 5 segundos.</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Botiquín</th>
+                                                    <td><code>Cura solo hasta 70 de vida.</code></td>
+                                                    <td>Cura hasta 100 de vida</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Botiquín</th>
+                                                    <td><code>Recupera solo el 70% de la vida que podría curar.</code></td>
+                                                    <td>Recupera solo el 80% de la vida que podria curar.</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Pastillas</th>
+                                                    <td><code>Dan solo 30 de vida.</code></td>
+                                                    <td>Dan 50 de vida</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Adrenalina</th>
+                                                    <td><code>Da solo 10 de vida.</code></td>
+                                                    <td>Da 25 de vida</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Adrenalina</th>
+                                                    <td><code>Dura solo 10 segundos los efectos de la adrenalina.</code></td>
+                                                    <td>Dura 15 segundos los efectos de la adrenalina.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mi-tarjeta">
+                                <div class="card-body">
+                                    <h3 class="card-title">Modificaciones adicionales</h3>
+                                    <p class="texto-suave">Buffs y nerfs aplicados en todas las fases del torneo</p>
+                                    <div class="table-responsive">
+                                        <table class="table align-middle mb-0" id="tabla_modificaciones">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Modificación</th>
+                                                    <th scope="col">Cambio</th>
+                                                    <th scope="col">Original</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr>
+                                                    <th scope="row">Frustacion del Tank</th>
+                                                    <td><code>La frustacion del tank pasa a ser a 120 puntos.</code></td>
+                                                    <td>La frustacion del tank es de 20 puntos.</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Vida del Tank</th>
+                                                    <td><code>La vida del tank pasara a ser de 7800 hp.</code></td>
+                                                    <td>La vida del tank es de 6000 hp.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+ 
+                            <div class="card mi-tarjeta peligro mt-4" id="solo_tier1">
+                                <div class="card-body">
+                                    <h4 class="card-title">Armas</h4>
+                                    <p class="card-text mb-0">Solo se usaran armas tier 1 y melees (cuerpo a cuerpo).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>

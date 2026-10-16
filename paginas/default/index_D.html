@@ -1,0 +1,58 @@
+        <div class="container mt-5" id="inicio">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-lg-6">
+                    <h1 class="display-4 mb-3">Torneo Universitario Left 4 Dead 2</h1>
+                    <p class="lead">XX equipos, 4 vs 4 en modo Versus, eliminación directa en cinco fases. Sobrevive, infecta y llega a la final en Dark Carnival.</p>
+                    <div class="d-flex flex-wrap gap-2 mt-4">
+                        <a class="btn btn-warning rounded-0" onclick="cargarPagina('paginas/formato/index_F.html')" href="#">Ver formato</a>
+                        <a class="btn btn-outline-light rounded-0" onclick="cargarPagina('paginas/requisitos/index_Q.html')" href="#">Qué necesito para jugar</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <!-- Imagen principal del torneo -->
+                    <video autoplay muted loop playsinline width="600">
+                        <source src="/videos/intro IA remaster.mp4" type="video/mp4" id="video">
+                        Tu navegador no soporta la reproducción de video.
+                    </video>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 mi-tarjeta" id="resumen_formato">
+                        <div class="card-body">
+                            <h5 class="card-title">Formato</h5>
+                            <p class="card-text">Las 5 fases del torneo y el mapa de cada una.</p>
+                            <a href="#" onclick="cargarPagina('paginas/formato/index_F.html')">Ver formato</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 mi-tarjeta" id="resumen_reglas">
+                        <div class="card-body">
+                            <h5 class="card-title">Reglas</h5>
+                            <p class="card-text">Los límites de tiempo.</p>
+                            <a href="#" onclick="cargarPagina('paginas/reglas/index_R.html')">Ver reglas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 mi-tarjeta" id="resumen_conducta">
+                        <div class="card-body">
+                            <h5 class="card-title">Conducta</h5>
+                            <p class="card-text">Cero toxicidad y el límite de lenguaje inapropiado.</p>
+                            <a href="#" onclick="cargarPagina('paginas/conducta/index_C.html')">Ver conducta</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 mi-tarjeta" id="resumen_requisitos">
+                        <div class="card-body">
+                            <h5 class="card-title">Requisitos</h5>
+                            <p class="card-text">Mods, consola, Steam y otros.</p>
+                            <a href="#" onclick="cargarPagina('paginas/requisitos/index_Q.html')">Ver requisitos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
